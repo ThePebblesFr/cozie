@@ -52,10 +52,10 @@ jobs:
           cache: yarn
 
       - name: Install dependencies
-        working-directory: ./my-website
+        working-directory: https://github.com/buds-lab/cozie-website
         run: yarn install --frozen-lockfile
       - name: Build website
-        working-directory: ./my-website
+        working-directory: https://github.com/buds-lab/cozie-website
         run: yarn build
 
       # Popular action to deploy to GitHub Pages:
