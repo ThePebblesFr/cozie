@@ -45,7 +45,7 @@ fetch('https://ay1bwnlt74.execute-api.us-east-1.amazonaws.com/test/request/?expe
 ```
 
 ### Extracting as a human using a browser
-https://ay1bwnlt74.execute-api.us-east-1.amazonaws.com/test/request/?experiment-id=<YOUR EXPERIMENT ID>&weeks=<NUMBER_OF_WEEKS>&user-id=<USER-ID(OPTIONAL)>
+https://ay1bwnlt74.execute-api.us-east-1.amazonaws.com/test/request/?experiment-id=YOUR EXPERIMENT ID&weeks=NUMBER_OF_WEEKS&user-id=USER-ID(OPTIONAL)
 
 for example. For Experiment-ID = test, User-ID = Vivid Vervet, and the last 30 weeks of data:
 

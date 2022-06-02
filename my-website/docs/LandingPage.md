@@ -6,8 +6,6 @@ sidebar_label: Introduction
 
 # Project Cozie  - A smartwatch methodology for quick and easy experience surveys 
 
-<img src="assets/cozieHomescreen.png" alt="drawing" width="200"/>
-
 ## What is Cozie?
 
 [Cozie](https://cozie.app/) is a Fitit Ionic, Versa, Versa Lite and Versa 2 clock face that can ask people questions. It is useful for [experience sampling research](https://en.wikipedia.org/wiki/Experience_sampling_method) and was designed for the built environment, although there are also forks focused on [Covid-19 symptoms tracking](https://github.com/pjayathissa/cozie-covid)
@@ -20,7 +18,7 @@ The foundation for this project is the [BUDS Lab](https://www.budslab.org/) effo
 This documentation guides you on how to:
 - Getting Started using the Cozie *Basic* application as hosted by the BUDS Lab. In this scenario, you just want to test out the Cozie app on your own Fitbit immediately. The data will flow into our InfluxDB database and you can extract the data using our REST API. The following documentation pages focus on this use type.
 - [Creating your own App](Installation.md) is a process in which you want to fork the Cozie respository and build your own verion with custom questions, etc. You can also use this knowledge to contribute to the core repository.
-- [Advanced data connectivity](Dataconnectivity.md) discusses the collection of the data from your own app and tips on how to manage and store those data
+- Advanced data connectivity discusses the collection of the data from your own app and tips on how to manage and store those data
 
 ## License
 

@@ -1,95 +1,116 @@
-module.exports = {
-  title: "Cozie An iOS application for IEQ and physiological data collection",
-  tagline: "Allows building occupants to provide feedback in real time",
-  url: "https://cozie.app",
-  baseUrl: "/",
-  favicon: "img/favicon.ico",
-  organizationName: "cozie-app", // Usually your GitHub org/user name.
-  projectName: "cozie", // Usually your repo name.
-  themeConfig: {
-    navbar: {
-      title: "Cozie",
-      logo: {
-        alt: "Cozie Logo",
-        src: "img/favicon.ico",
-      },
-      items: [
-        {
-          to: "docs/",
-          activeBasePath: "docs",
-          label: "Docs",
-          position: "left",
-        },
-        {
-          href: "https://github.com/cozie-app/cozie",
-          label: "GitHub",
-          position: "right",
-        },
-        {
-          href: "https://cozie-apple.app",
-          label: "Cozie Apple",
-          position: "right",
-        },
-      ],
-    },
-    footer: {
-      style: "light",
-      links: [
-        {
-          title: "Docs",
-          items: [
-            {
-              label: "Introduction",
-              to: "docs/",
-            },
-          ],
-        },
-        {
-          title: "Community",
-          items: [
-            {
-              label: "BUDS Lab",
-              href: "https://www.budslab.org",
-            }
-          ],
-        },
-        {
-          title: "More",
-          items: [
-            {
-              label: "Cozie Repo",
-              href: "https://github.com/cozie-app/cozie",
-            },
-            {
-              label: "Cozie Apple Repo",
-              href: "https://github.com/cozie-app/cozie-apple",
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Cozie, National University of Singapore, BUDS Lab. Built with Docusaurus.`,
-    },
+// @ts-check
+// Note: type annotations allow type checking and IDEs autocompletion
+
+const lightCodeTheme = require('prism-react-renderer/themes/github');
+const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+
+/** @type {import('@docusaurus/types').Config} */
+const config = {
+  title: 'Cozie, a Fitbit Clockface for IEQ and physiological data collection',
+  tagline: 'Allows building occupants to provide feedback in real time',
+  url: 'https://cozie-with-website.netlify.app',
+  baseUrl: '/',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+  favicon: 'img/favicon.ico',
+
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: 'ThePebblesFr', // Usually your GitHub org/user name.
+  projectName: 'cozie-website', // Usually your repo name.
+
+  // Even if you don't use internalization, you can use this field to set useful
+  // metadata like html lang. For example, if your site is Chinese, you may want
+  // to replace "en" with "zh-Hans".
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
   },
+
   presets: [
     [
-      "@docusaurus/preset-classic",
-      {
+      'classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
         docs: {
-          // It is recommended to set document id as docs home page (`docs/` path).
-          // homePageId: "introduction",
-          sidebarPath: require.resolve("./sidebars.js"),
+          sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/ThePebblesFr/cozie/tree/master/my-website",
+            'https://github.com/ThePebblesFr/cozie-website/tree/master/my-website',
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve('./src/css/custom.css'),
         },
-        googleAnalytics: {
-          trackingID: 'UA-151445384-5',
-          anonymizeIP: true,
-        },
-      },
+      }),
     ],
   ],
+
+  themeConfig:
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    ({
+      navbar: {
+        title: 'Cozie',
+        logo: {
+          alt: 'Cozie Logo',
+          src: 'img/favicon.ico',
+        },
+        items: [
+          {
+            type: 'doc',
+            docId: 'home',
+            position: 'left',
+            label: 'Documentation',
+          },
+          {
+            href: 'https://github.com/facebook/docusaurus',
+            label: 'GitHub',
+            position: 'right',
+          },
+        ],
+      },
+      footer: {
+        style: 'dark',
+        links: [
+          {
+            title: 'Docs',
+            items: [
+              {
+                label: 'Introduction to cozie',
+                to: '/docs/home',
+              },
+            ],
+          },
+          {
+            title: 'Community',
+            items: [
+              {
+                label: 'BUDS Lab',
+                href: 'https://www.budslab.org',
+              },
+            ],
+          },
+          {
+            title: 'More',
+            items: [
+              {
+                label: 'Cozie Repo',
+                href: 'https://github.com/cozie-app/cozie',
+              },
+              {
+                label: 'Cozie Apple Repo',
+                href: 'https://github.com/cozie-app/cozie-apple',
+              },
+            ],
+          },
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()} Cozie, National University of Singapore, BUDS Lab. Built with Docusaurus.`,
+      },
+      prism: {
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
+      },
+    }),
 };
+
+module.exports = config;

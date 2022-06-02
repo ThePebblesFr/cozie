@@ -1,10 +1,9 @@
-import React from "react";
-import clsx from "clsx";
-import Layout from "@theme/Layout";
-import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import React from 'react';
+import clsx from 'clsx';
+import Layout from '@theme/Layout';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from "@docusaurus/useBaseUrl";
-import styles from "./styles.module.css";
+import styles from './index.module.css';
 
 const features = [
   {
@@ -127,7 +126,7 @@ function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Cozie - An iOS application for indoor environmental quality satisfaction and physiological data collection."
+      description="Cozie - A Fitbit clockface for indoor environmental quality satisfaction and physiological data collection."
     >
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className="container">
