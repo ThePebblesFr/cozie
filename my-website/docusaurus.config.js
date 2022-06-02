@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Cozie, a Fitbit Clockface for IEQ and physiological data collection',
   tagline: 'Allows building occupants to provide feedback in real time',
-  url: 'https://cozie-with-website.netlify.app',
+  url: 'https://thepebblesfr.github.io/cozie/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
