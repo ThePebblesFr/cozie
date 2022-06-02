@@ -4,7 +4,7 @@ title: Introduction
 sidebar_label: Introduction
 ---
 
-# Project Cozie  - A smartwatch methodology for quick and easy experience surveys 
+# Cozie  - A smartwatch methodology for quick and easy experience surveys 
 
 ## What is Cozie?
 
